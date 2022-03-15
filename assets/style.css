@@ -35,11 +35,8 @@ p {
 a {
     padding: 15px;
     color: var(--dark);
-    /* margin: 20px; */
-    /* float: right; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    /* list-style-type: none; */
     text-decoration: none;
 }
 
@@ -75,7 +72,6 @@ header a {
 
 /* hero image styling */
 .hero {
-    /* height: 600px; */
     width: 100%;
 }
 
@@ -92,12 +88,8 @@ header a {
     padding: 16px;
     display: flex;
     justify-content: space-between;
-    /* float: left; */
-    /* width: 70%; */
     margin: auto;
-    /* border-left: solid var(--dark); */
     font-size: 18px;
-    /* border-radius: 10px; */
     border: solid var(--light);
     left: solid var(--dark);
 }
@@ -146,14 +138,9 @@ li :hover {
     background-size: cover;
     background-position: center;
 }
-/* .work :hover {
-    opacity: 0.5;
-} */
-
 .grid :hover {
     opacity: 0.5;
 }
-
 
 .grid p {
     size: 50px;
