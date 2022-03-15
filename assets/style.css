@@ -1,7 +1,8 @@
 /* declare variable for colors */
 :root {
-    --dark2: #293241;
-    --background: #e0fbfc;
+    --dark: #293241;
+    --light: #e0fbfc;
+    --background: #d9dcd6;
 }
 
 * {
@@ -12,7 +13,7 @@
 
 /*set background color*/
 body {
-    background-color: #d9dcd6;
+    background-color: var(--background)
 }
 
 /*  flex main */
@@ -33,7 +34,7 @@ p {
 
 a {
     padding: 15px;
-    color: var(--dark2);
+    color: var(--dark);
     /* margin: 20px; */
     /* float: right; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -54,16 +55,18 @@ ul {
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--dark2);
-    color: var(--background);
+    background-color: var(--dark);
+    color: var(--light);
     display: flex;
     justify-content: space-between;
 }
 
-
+nav a{
+    color: var(--light);
+}
 
 header a {
-    color: var(--background);
+    color: var(--light);
     display: flex;
     justify-content: space-evenly;
 }
@@ -72,7 +75,7 @@ header a {
 
 /* hero image styling */
 .hero {
-    height: 600px;
+    /* height: 600px; */
     width: 100%;
 }
 
@@ -81,38 +84,42 @@ header a {
     padding: 0.5rem 1rem;
     float: left;
     width: 200px;
-    margin: 25px;
+    margin: auto;
     font-size: 30px;
 }
 
 .card-body {
-    padding: 0.5rem 1rem;
+    padding: 16px;
     display: flex;
     justify-content: space-between;
-    float: left;
-    width: 70%;
+    /* float: left; */
+    /* width: 70%; */
     margin: auto;
-    /* border-left: solid var(--dark2); */
+    /* border-left: solid var(--dark); */
     font-size: 18px;
-    border-radius: 10px;
-    border: solid var(--background);
-    left: solid var(--dark2);
+    /* border-radius: 10px; */
+    border: solid var(--light);
+    left: solid var(--dark);
+}
+
+#about-me {
+    justify-content: space-evenly;
 }
 
 .card {
-    background-color: var(--background);
+    background-color: var(--light);
     padding: 3%;
     margin: 3%;
-    color: var(--dark2);
+    color: var(--dark);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     width: 90%;
     min-height: 200px;
 }
 
 .card div ul li a {
-    color: var(--background);
+    color: var(--light);
     justify-content: center;
-    background-color: var(--dark2);
+    background-color: var(--dark);
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -121,45 +128,15 @@ header a {
 
 /* puts border around links */
 li :hover {
-    border: 1px solid var(--dark2) ;
+    border: 1px solid var(--dark) ;
     border-radius: 2px;
-    box-shadow:inset 0 0 0 2px var(--background);
+    box-shadow:inset 0 0 0 2px var(--light);
 }
 
-/* media query */
-@media screen and (max-width:992px) {
-    header {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* nav {
-        display: flex;
-        flex-direction: column;
-    } */
-
-    .card {
-        display: flex;
-        flex-direction: column;
-        border: solid var(--dark2);
-        border-radius: 10px;
-    }
-
-    .card h2 {
-        border-right: 0px;
-        width: 100%;
-        text-align: center;
-    }
-
-    
-}
-
-/* grid styling for my work */
+/* grid styling for my work section*/
 .grid {
     display: grid;
-    /* width: 100%;*/
     min-height: 100px; 
-    /* display: flex; */
     gap: 5px;
     grid-auto-rows: minmax(200px, auto);
     grid-template-columns: 50% 50%;
@@ -170,8 +147,23 @@ li :hover {
     background-position: center;
 }
 /* .work :hover {
-    filter: brightness(60%);
+    opacity: 0.5;
 } */
+
+.grid :hover {
+    opacity: 0.5;
+}
+
+
+.grid p {
+    size: 50px;
+    padding: 7px;
+    background-color: var(--light);
+    display: inline-block;
+    box-shadow:inset 0 0 0 2px var(--dark);
+    border-radius: 5px;
+    /* border: 20px var(); */
+}
 
 
 .box1 {
@@ -195,27 +187,64 @@ li :hover {
     background-image: url("./images/works/work-5.jpeg");
 }
 
-@media screen and (max-width:768px) {
+/* media query */
+@media screen and (max-width:992px) {
     header {
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
-    nav {
-        display: flex;
-        flex-direction: column;
+    header h1 {
+        padding: 25px;
+        border-bottom: 5px var(--light);
     }
 
     .card {
         display: flex;
         flex-direction: column;
-        border: solid var(--dark2);
+        border: solid var(--dark);
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+    .card h2 {
+        /* border-right: 0px; */
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    
+}
+
+@media screen and (max-width:768px) {
+    header {
+        font-size: small;
+    }
+
+    nav {
+        font-size: small;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        border: solid var(--dark);
         border-radius: 10px;
     }
 
     .card-header {
         border-right: 0px;
-        width: 100%;
+        width: auto;
         text-align: center;
+    }
+
+    .links ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 400px;
+        margin: auto;
     }
 }
