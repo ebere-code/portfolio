@@ -11,10 +11,23 @@ The aim of this project was to create a portfolio of work to showcase my skill.
 
 ## SCREENSHOTS
 
-![screenshot of top of page](./)
+* Screenshot of the top of desktop page
+ ![screenshot of top of desktop page](./assets/images/read-me/desktop-view-top.PNG)
 
-![screenshot of bottom of page](./assets/images/screenshot-of-bottom.png)
+* Screenshot of the bottom of desktop page
+![screenshot of bottom of desktop page](./assets/images/read-me/desktop-view-bottom.PNG)
 
+* Screenshot of the top of ipad page
+![screenshot of top of tablet page](./assets/images/read-me/ipad-view-top.jpg)
+
+* Screenshot of the bottom of ipad page
+![screenshot of bottom of ipad page](./assets/images/read-me/ipad-view-bottom.jpg)
+
+* Screenshot of the top of mobile page
+![screenshot of top of mobile page](./assets/images/read-me/mobile-view-top.jpg)
+
+* Screenshot of the bottom of mobile page
+![screenshot of bottom of mobile page](./assets/images/read-me/mobile-view-bottom.jpg)
 
 ## LINK TO DEPLOYED PAGE
 
