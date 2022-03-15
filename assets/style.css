@@ -86,8 +86,11 @@ header a {
     left: solid var(--dark);
 }
 
-#about-me h2 {
-    height: 20%;
+#card {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .card {
