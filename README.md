@@ -32,4 +32,4 @@ The aim of this project was to create a portfolio of my work to showcase my skil
 
 ## LINK TO DEPLOYED PAGE
 
- https://ebere-code.github.io/hw-2-portfolio/
+ https://ebere-code.github.io/portfolio/
