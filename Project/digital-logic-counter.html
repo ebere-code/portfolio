@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adds title -->
+    <title>Digital Logic Counter</title>
+    <!-- linking stylesheet -->
+    <link rel="stylesheet" href="./digital-logic-counter.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>Digital Logic Counter</h1>
+    </header>
+
+    <!-- begining of main section-->
+    <main>
+        <!-- about me card -->
+        <figure class="card">
+            <h2>Introduction</h2>
+            <div id="card">
+                <p class="card-body">
+                    The objective of this project was to design and build a basic counter circuit using the
+                    SN74LS191 chip along with additional combinational logic.
+                    The first circuit will count from 0 to 9 each time a button (Switch 1) is pressed and
+                    released. It would also include a clear button (Switch 2) that resets the count to zero, and
+                    an LED that lights up when the count reaches 9 (terminal count) and uses less than 1mA of
+                    current. The numbers are shown on a 7-segment display, which is controlled by a
+                    SN74LS47 decoder.
+                </p>
+    
+                <p class="card-body">
+                    I will then upgrade this circuit to count to 33 by adding another 7-segment display, a
+                    second SN74LS47 decoder, and another SN74LS191 chip. This modification will follow the
+                    same design principles, ensuring that the expanded circuit remains easy to use and energy-
+                    efficient. This step will help demonstrate how our initial designs can be scaled up to a larger
+                    capacity.
+                </p> 
+            </div>
+            
+        </figure>
+
+        <figure class="card">
+            <h2>Schematics</h2>
+                <h3>0-9 Counter</h3>
+                <!-- schematic image -->
+                <img src="./images/0-9counter.png" alt="0-9 Counter Schematics" class="hero" ></img>
+                <br>
+                <h3>0-33 Counter</h3>
+                <!-- schematic image -->
+                <img src="./images/0-33counter.png" alt="0-33 Counter Schematics" class="hero" ></img>
+        </figure>
+
+        <figure class="card">
+            <h2>Photos and Videos</h2>
+                <div id="pho">
+                    <!--<h3>0-9 Counter</h3-->
+                    <img src="./images/counter1.png" alt="0-9 Counter Schematics" class="photos"></img>
+                    <img src="./images/counter2.png" alt="0-9 Counter Schematics" class="photos"></img>
+                    <!--img src="./images/0-33counter.png" alt="0-9 Counter Schematics"></img-->
+                </div>
+                
+                <video width= 90% height=50% controls class="video">
+                    <source src="./images/counter33vid.mp4" type="video/mp4">
+                    <!--source src="movie.ogg" type="video/ogg"-->
+                  Your browser does not support the video tag.
+                  </video>
+        </figure>
+
+    </main> 
+</body>
+</html>

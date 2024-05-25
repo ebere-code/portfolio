@@ -65,6 +65,7 @@ header a {
 /* hero image styling */
 .hero {
     width: 100%;
+    /*height: 100px;*/
 }
 
 /* general card styling */
@@ -149,10 +150,11 @@ li :hover {
 
 
 .box1 {
-    grid-column: 1/3;
-    background-image: url("./images/works/work-1.jpeg");
+    background-image: url("./images/works/work-1.png");
 }
-
+.box1-1 {
+    background-image: url("./images/works/work1-1.png");
+}
 .box2 {
     background-image: url("./images/works/work-2.webp");
 }
