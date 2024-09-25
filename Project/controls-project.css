@@ -1,0 +1,248 @@
+/* declare variable for colors */
+:root {
+    --dark: #293241;
+    --light: #e0fbfc;
+    --background: #d9dcd6;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*set background color*/
+body {
+    background-color: var(--background)
+}
+
+h3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+p {
+    text-align: justify;
+    padding: 3px;
+}
+
+a {
+    padding: 15px;
+    color: var(--dark);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+/* header styling */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--dark);
+    color: var(--light);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    color: var(--light);
+}
+
+header a {
+    color: var(--light);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/* image styling */
+
+.photos {
+    width: 40%;
+    float: left;
+    padding: 10px 10px;
+    display: flex;
+}
+.pho{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#video {
+    padding: 10px 10px;
+    align-self: center;
+}
+
+
+/* general card styling */
+.card h2 {
+    padding: 0.5rem 1rem;
+    float: left;
+    width: 100%;
+    margin: auto;
+    font-size: 30px;
+}
+.card h3 {
+    padding: 0.5rem 1rem;
+    float: left;
+    width: 200px;
+    margin: auto;
+    font-size: 20px;
+}
+
+
+.card-body {
+    padding: 16px;
+    display: flex;
+    /*justify-content: space-between;*/
+    margin: auto;
+    font-size: 18px;
+    border: solid var(--light);
+    left: solid var(--dark);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border: solid var(--dark);
+    border-radius: 10px;
+    justify-content: center;
+}
+
+#card {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.card {
+    background-color: var(--light);
+    padding: 3%;
+    margin: 3%;
+    color: var(--dark);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    width: 90%;
+    min-height: 200px;
+}
+
+.card div ul li a {
+    color: var(--light);
+    justify-content: center;
+    background-color: var(--dark);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+
+
+/* media query */
+@media screen and (max-width:992px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        padding: 25px;
+        border-bottom: 5px var(--light);
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        border: solid var(--dark);
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+    .card h2 {
+        /* border-right: 0px; */
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    .photos {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header {
+        font-size: small;
+    }
+
+    nav {
+        font-size: small;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        border: solid var(--dark);
+        border-radius: 10px;
+    }
+
+    .card-header {
+        border-right: 0px;
+        width: auto;
+        text-align: center;
+    }
+
+    .links ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 400px;
+        margin: auto;
+    }
+    .photos {
+        width: 100%;
+    }
+}
+
+
+.button {
+    display: inline-block;
+    padding: 8px 16px; /* Slightly increased padding for better appearance */
+    margin: 10px auto; /* Center the buttons and add spacing between them */
+    background-color: var(--background); /* Button background color */
+    color: black; /* Text color */
+    text-align: center;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition */
+    font-size: 14px; /* Font size adjustment */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    width: max-content; /* Makes the button width fit the content */
+}
+
+.button li {
+    list-style: none; /* Remove bullet point */
+    padding: 0; /* Remove any default padding */
+}
+
+.button a {
+    color: black; /* Ensure link text is white */
+    text-decoration: none; /* Remove link underline */
+    display: block; /* Make the link fill the button area */
+}
+
+.button:hover {
+    background-color: #5e6b84; /* Darker shade on hover */
+    color: white;
+}
+
