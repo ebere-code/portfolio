@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adds title -->
+    <title>Yagi-Uda Antenna</title>
+    <!-- linking stylesheet -->
+    <link rel="stylesheet" href="./yagi-uda-antenna-project.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>Yagi-Uda Antenna</h1>
+    </header>
+
+    <!-- begining of main section-->
+    <main>
+        <!-- about me card -->
+        <figure class="card">
+            <h2>Introduction</h2>
+            <div id="card">
+                <p class="card-body">
+                    The goal of this project was to design, simulate, and construct a directional 
+                    Yagi-Uda antenna optimized for a 915 MHz frequency, commonly used in RFID and 
+                    industrial wireless applications. Using CST Studio Suite, I modeled and tuned 
+                    the antenna elements for maximum gain and directivity. The finalized design was 
+                    then physically built, tested using a spectrum analyzer, and used in a campus-wide 
+                    "Fox Hunt" signal-tracking competition. This project strengthened my skills in 
+                    electromagnetic simulation, RF design principles, and hands-on antenna fabrication.
+                </p>
+
+            </div>
+            <h2>Design Specifications</h2>
+            <div>
+                <p class="card-body" id="card">
+                    •	Design Frequency: 915 MHz<br>
+                    •	Gain : -14.16 dBi<br><br>
+                    •	Elements Lengths:<br>
+                    &emsp;-	Reflector : 162.45mm<br>
+                    &emsp;-	Driven Element (Dipole): 121.78 mm<br>
+                    &emsp;-	Element 1 : 126.73 mm<br>
+                    &emsp;-	Element 2 : 114 mm<br>
+                    &emsp;-	Element 3 : 95 mm<br>
+                    &emsp;-	Gap in Dipole : 10 mm<br><br>
+                    
+                    •	Spacing:<br>
+                    &emsp;- Reflector to Dipole : 86 mm<br>
+                    &emsp;- Driven Element (Dipole) : Centered at the origin<br>
+                    &emsp;- Director 1 to Dipole : 105 mm<br>
+                    &emsp;- Director 2 to Dipole: +50 mm from elem1<br>
+                    &emsp;- Director 3 to Dipole : +40 mm from elem2<br>
+                </p>
+    
+            </div>
+            
+        </figure>
+
+        <figure class="card">
+            <h2>Simulation</h2>
+                <h3>Antenna Schematic</h3>
+                <!-- schematic image -->
+                <img src="./images/yagi-schematic.PNG" alt="Antenna Schematic" class="responsive-img" ></img>
+                <br>
+                <h3>S11 Graph</h3>
+                <!-- schematic image -->
+                <img src="./images/yagiS11.PNG" alt="Antenna S11 plot" class="screenshot" ></img>
+                <br>
+                <h3>2-D Radiation Graph</h3>
+                <!-- schematic image -->
+                <img src="./images/yagi1Dradiation.PNG" alt="2-D Radiation Graph" class="screenshot" ></img>
+                <br>
+                <h3>3-D Radiation Pattern</h3>
+                <!-- schematic image -->
+                <img src="./images/yagi3Dradiation.PNG" alt="3-D radiation pattern" class="screenshot" ></img>
+                <br>
+                <h3>Bill of Materials </h3>
+                <!-- schematic image -->
+                <img src="./images/antenna-materials.png" alt="Bill of Materials" class="screenshot" ></img>
+                <br>
+            
+        </figure>
+
+        <figure class="card">
+            <h2>Photos</h2>
+                <h3>Antenna Gain and Frequency Meeasurement </h3>
+                <!-- schematic image -->
+                <img src="./images/frequencydip.png" alt="Antenna Gain and Frequency Meeasurement" class="responsive-img" ></img>
+                <br>
+                <h3>Image of Antenna </h3>
+                <!-- schematic image -->
+                <img src="./images/antenna.png" alt="pic of antenna" class="responsive-img" ></img>
+                <br>
+        </figure>
+
+    </main> 
+</body>
+</html>
